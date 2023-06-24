@@ -1,0 +1,19 @@
+<mat-card matRipple class="card" *ngFor="let video of video$ ">
+      <a href="#">
+        <img [src]="video.snippet.thumbnails.medium.url">
+      </a>
+      <mat-card-content class="video-details">
+        <h5>{{ video.snippet.title }}</h5>
+        <p>{{ video.snippet.channelTitle }}</p>
+      </mat-card-content>
+</mat-card>
+
+
+<!-- <mat-card matRipple class="card" *ngFor="...">
+  <a href="#">
+      <img mat-card-image [src]="..." >
+  </a>
+  <mat-card-content class="card-content">
+      ...
+  </mat-card-content>
+</mat-card> -->
